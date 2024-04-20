@@ -1,0 +1,10 @@
+---
+- name: use nginx role playbook
+  hosts: webservers
+  become: true
+
+  roles:
+    - role: nginx
+      system_manager: tatar4uk.jura@gmail.com
+      
+
